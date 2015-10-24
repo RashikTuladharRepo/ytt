@@ -256,11 +256,33 @@ body {
 .navbar .nav li > a .active {
   color: #EF5323;
 }
-.slider {
-  height: 500px;
-  background-image: url('../img/slid.jpg');
-  margin-bottom: 10px;
+.rslides {
   position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
 .services {
   padding-top: 60px;
@@ -325,6 +347,16 @@ body {
 }
 #mixItUp .mix {
   display: none;
+}
+.our-team {
+  padding-top: 60px;
+}
+.our-team .our-team-description {
+  font-size: 18px;
+  text-align: center;
+}
+.our-team .our-team-description img {
+  width: 100%;
 }
 .contact {
   padding-top: 60px;

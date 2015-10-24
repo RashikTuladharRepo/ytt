@@ -11,21 +11,22 @@
     <link rel="stylesheet" type="text/css" href="css/custom-fonts.css">
     <link rel="stylesheet" type="text/css" href="css/hover-min.css">
     <link rel="stylesheet" type="text/css" href="css/ytt-custom.css">
+    <link href="css/alpha.css" rel="stylesheet" type="text/css"/>
     <style>
-        /*@media (min-width: 768px) and (max-width: 920px) {*/
-            /*.navbar-collapse.collapse {*/
-                /*display: none !important;*/
-            /*}*/
-            /*.navbar-collapse.collapse.in {*/
-                /*display: block !important;*/
-            /*}*/
-            /*.navbar-header .collapse, .navbar-toggle {*/
-                /*display:block !important;*/
-            /*}*/
-            /*.navbar-header {*/
-                /*float:none;*/
-            /*}*/
-        /*}*/
+        @media (min-width: 768px) and (max-width: 920px) {
+            .navbar-collapse.collapse {
+                display: none !important;
+            }
+            .navbar-collapse.collapse.in {
+                display: block !important;
+            }
+            .navbar-header .collapse, .navbar-toggle {
+                display:block !important;
+            }
+            .navbar-header {
+                float:none;
+            }
+        }
     </style>
 </head>
 <body id="home" data-spy="scroll" data-target="#myNavbar" data-offset="80">
@@ -39,7 +40,7 @@
 </div>
 <!-- Preloader end here -->
 
-<div id="backoffer" class="backoffer"><a href="#home"  data-toggle="tooltip" data-placement="top" data-original-title="Default tooltip"><i class="fa fa-question"></i></a></div>
+<div id="backoffer" class="backoffer"><a href="#home"  data-toggle="tooltip" data-placement="top" data-original-title="Have A Project??"><i class="fa fa-question"></i></a></div>
 <div id="backtotop" class="backtotop"><a href="#home"><i class="fa fa-angle-up hvr-bob"></i></a></div>
 
 <div class="logo-header container-fluid">
@@ -91,7 +92,12 @@
 
 <!--slider-->
 <section class="container-fluid slider" id="slider">
-
+    <ul class="rslides">
+        <li><img src="img/slider-images/slid.jpg" alt=""></li>
+        <li><img src="img/slider-images/slid2.jpg" alt=""></li>
+        <li><img src="img/slider-images/slid3.jpg" alt=""></li>
+        <li><img src="img/slider-images/slid4.jpg" alt=""></li>
+    </ul>
 </section>
 <!--slider-->
 
@@ -104,7 +110,7 @@
 
     <div class="container-fluid">
         <div class="col-md-3 service-description">
-            <img src="img/webdev.png" class="img-responsive">
+            <img src="img/services/webdev.png" class="img-responsive">
             <p>
                 <strong>Web Development</strong><br>
                 Get An Amazing Responsive Website To Boost Your Business.
@@ -112,7 +118,7 @@
         </div>
 
         <div class="col-md-3 service-description">
-            <img src="img/mobileapp.png" class="img-responsive">
+            <img src="img/services/mobileapp.png" class="img-responsive">
             <p>
                 <strong>Mobile Application</strong><br>
                 Get application for IOS and Android Platforms.
@@ -120,7 +126,7 @@
         </div>
 
         <div class="col-md-3 service-description">
-            <img src="img/graphics.png" class="img-responsive">
+            <img src="img/services/graphics.png" class="img-responsive">
             <p>
                 <strong>Graphics Designing</strong><br>
                 One Stop Solution For All Browser And Online Based Web Application.
@@ -128,7 +134,7 @@
         </div>
 
         <div class="col-md-3 service-description">
-            <img src="img/domain.png" class="img-responsive">
+            <img src="img/services/domain.png" class="img-responsive">
             <p>
                 <strong>Domain Registration / Web Hosting</strong><br>
                 Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
@@ -136,7 +142,7 @@
         </div>
 
         <div class="col-md-3 service-description">
-            <img src="img/seo.png" class="img-responsive">
+            <img src="img/services/seo.png" class="img-responsive">
             <p>
                 <strong>SEO</strong><br>
                 Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
@@ -144,7 +150,7 @@
         </div>
 
         <div class="col-md-3 service-description">
-            <img src="img/contentwriting.png" class="img-responsive">
+            <img src="img/services/contentwriting.png" class="img-responsive">
             <p>
                 <strong>Content Writing</strong><br>
                 Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
@@ -152,7 +158,7 @@
         </div>
 
         <div class="col-md-3 service-description">
-            <img src="img/technical.png" class="img-responsive">
+            <img src="img/services/technical.png" class="img-responsive">
             <p>
                 <strong>Technical Assistance</strong><br>
                 Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
@@ -161,16 +167,16 @@
 
     </div>
 
-    <!--<div class="container other-service-description">-->
-        <!--<p>-->
-            <!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's-->
-            <!--standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to-->
-            <!--make a type specimen book. It has survived not only five centuries, but also the leap into-->
-            <!--electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release-->
-            <!--of Letraset sheets containing Lorem Ipsum passages,-->
-            <!--and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.-->
-        <!--</p>-->
-    <!--</div>-->
+    <div class="container-fluid other-service-description">
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
 
 </section>
 <!--services-->
@@ -185,7 +191,7 @@
     <!-- step 1-->
     <div class="container-fluid steps-flow" style="background: #B0E0EC;">
         <div class="col-md-4">
-            <img src="img/step1.jpg" class="img-responsive">
+            <img src="img/process/step1.jpg" class="img-responsive">
         </div>
         <div class="col-md-8">
             <h1>Analysis And Business Requirements.</h1>
@@ -202,7 +208,7 @@
     <!-- step 2-->
     <div class="container-fluid steps-flow" style="background: #B0E0EC;">
         <div class="col-md-4">
-            <img src="img/step2.jpg">
+            <img src="img/process/step2.jpg">
         </div>
         <div class="col-md-8">
             <h1>Prototyping And Designing.</h1>
@@ -219,7 +225,7 @@
     <!-- step 3-->
     <div class="container-fluid steps-flow" style="background: #FAF7CE;">
         <div class="col-md-4">
-            <img src="img/step3.jpg" class="img-responsive">
+            <img src="img/process/step3.jpg" class="img-responsive">
         </div>
         <div class="col-md-8">
             <h1>Coding And Development.</h1>
@@ -236,7 +242,7 @@
     <!-- step 4-->
     <div class="container-fluid steps-flow" style="background: #E4C6D2;">
         <div class="col-md-4">
-            <img src="img/step4.jpg" class="img-responsive">
+            <img src="img/process/step4.jpg" class="img-responsive">
         </div>
         <div class="col-md-8">
             <h1>Testing And Checking.</h1>
@@ -252,7 +258,7 @@
     <!-- step 5-->
     <div class="container-fluid steps-flow" style="background: #82C341;">
         <div class="col-md-4">
-            <img src="img/step5.jpg" class="img-responsive">
+            <img src="img/process/step5.jpg" class="img-responsive">
         </div>
         <div class="col-md-8">
             <h1>Delivery Of System/ Product.</h1>
@@ -270,9 +276,60 @@
 
 
 <!--portfolio-->
+<section id="our-team" class="our-team">
+    <div class="container-fluid">
+        <h2 class="ytt-blue"><i class="fa fa-users">&nbsp;</i>Our Hardworking Team</h2>
+    </div>
+    <!--<img src="img/team.jpg" class="img-responsive">-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/ceo.jpg" class="img-responsive">
+                <p>
+                    <strong>CEO</strong><br>
+                    Chief Executive Officer
+                </p>
+            </div>
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/projmanager.jpg" class="img-responsive">
+                <p>
+                    <strong>Project Manager</strong><br>
+                    Project Manager
+                </p>
+            </div>
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/webdeveloper.jpg" class="img-responsive">
+                <p>
+                    <strong>Web Developer</strong><br>
+                    Web Developer
+                </p>
+            </div>
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/mobileappdev.jpg" class="img-responsive">
+                <p>
+                    <strong>Mobile App Developer</strong><br>
+                    Mobile App Developer
+                </p>
+            </div>
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/seoexpert.jpg" class="img-responsive">
+                <p>
+                    <strong>SEO Expert</strong><br>
+                    SEO Expert
+                </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--portfolio-->
 <section id="portfolio" class="portfolio visibility-hidden">
     <div class="container-fluid">
-        <h2 class="ytt-red"><i class="fa fa-check">&nbsp;</i>Some of Our Works!</h2>
+        <h2 class="ytt-red"><i class="fa fa-globe">&nbsp;</i>Some of Our Works!</h2>
     </div>
 
 
@@ -291,16 +348,16 @@
         <div class="tab-content col-md-10">
             <div class="row" id="mixItUp">
                 <div class="col-md-4 col-sm-12 mix webdevelopment">
-                    <img src="img/step4.jpg" class="img-responsive img-thumbnail"/>
+                    <img src="img/process/step4.jpg" class="img-responsive img-thumbnail"/>
                 </div>
                 <div class="col-md-4 mix mobileapp">
-                    <img src="img/step1.jpg" class="img-responsive img-thumbnail"/>
+                    <img src="img/process/step1.jpg" class="img-responsive img-thumbnail"/>
                 </div>
                 <div class="col-md-4 mix graphics">
-                    <img src="img/step2.jpg" class="img-responsive img-thumbnail"/>
+                    <img src="img/process/step2.jpg" class="img-responsive img-thumbnail"/>
                 </div>
                 <div class="col-md-4 mix contents">
-                    <img src="img/step3.jpg" class="img-responsive img-thumbnail"/>
+                    <img src="img/process/step3.jpg" class="img-responsive img-thumbnail"/>
                 </div>
             </div>
         </div>
@@ -310,6 +367,92 @@
 <!--portfolio-->
 
 &nbsp;
+
+
+<!--testimonials-->
+<section class="testimonials">
+    <div class="container-fluid">
+        <h2 class="ytt-green"><i class="fa fa-user">&nbsp;</i>Our Clients Thought On Us!</h2>
+    </div>
+
+
+    <section id="testimonials">
+
+        <div class="testim-ovl"></div>
+        <div class="testimonials-wrapper">
+
+            <ul class="testimonials-line">
+
+                <li class="customer">
+
+                    <div class="testimonial-bubble">
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc,</p>
+                    </div>
+
+                    <div class="cus-profile">
+                        <span class="cus-image"><img src="img/testimonials/te1.jpg"></span>
+                     <span class="cus-name">
+                         Customer
+                         <span class="cus-title">His title</span>
+                      </span>
+                    </div>
+
+                </li>
+
+                <li class="customer">
+
+                    <div class="testimonial-bubble">
+                        <p> Lor separat existentie es un myth. Por scientie, musica, sport etc,</p>
+                    </div>
+
+                    <div class="cus-profile">
+                        <span class="cus-image"><img src="img/testimonials/te2.jpg"></span>
+                      <span class="cus-name">
+                         Customer
+                         <span class="cus-title">His title</span>
+                      </span>
+                    </div>
+
+                </li>
+
+                <li class="customer">
+
+                    <div class="testimonial-bubble">
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc,</p>
+                    </div>
+
+                    <div class="cus-profile">
+                        <span class="cus-image"><img src="img/testimonials/te3.jpg"></span>
+                      <span class="cus-name">
+                         Customer
+                         <span class="cus-title">His title</span>
+                      </span>
+                    </div>
+
+                </li>
+
+                <li class="customer">
+                    <div class="testimonial-bubble">
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. </p>
+                    </div>
+
+                    <div class="cus-profile">
+                        <span class="cus-image"><img src="img/testimonials/te1.jpg"></span>
+                      <span class="cus-name">
+                         Customer
+                         <span class="cus-title">His title</span>
+                      </span>
+                    </div>
+                </li>
+            </ul><!-- .testimonials-line -->
+
+        </div><!-- .testimonials-wrapper -->
+
+    </section><!-- .testimonials -->
+
+</section>
+
+
 
 <!--contact-->
 <section id="contact" class="contact visibility-hidden">
@@ -377,11 +520,29 @@
 <script src="js/jquery.mixitup.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/ytt-custom.js"></script>
 <script>
-    <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
     });
 </script>
+
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function() {
+        $(".rslides").responsiveSlides({
+            auto: true,             // Boolean: Animate automatically, true or false
+            speed: 3000,            // Integer: Speed of the transition, in milliseconds
+            timeout: 6000           // Integer: Time between slide transitions, in milliseconds
+        });
+    });
 </script>
+
+
+<script type="text/javascript" src="js/alpha.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#testimonials').alpha();
+    })
+</script>
+
 </body>
 </html>

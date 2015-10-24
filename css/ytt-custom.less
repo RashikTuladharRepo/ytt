@@ -278,13 +278,45 @@ body {
 //slider
 
 .slider {
-  height: 500px;
+  //height: 500px;
   //background-image: url('http://jojarvis.com/assets/img/slider-images/illustration_web-design.jpg');
-  background-image: url('../img/slid.jpg');
+  //background-image: url('../img/slid.jpg');
   //background-attachment: fixed;
   //background-size: cover;
-  margin-bottom: 10px;
+  //margin-bottom: 10px;
+  //position: relative;
+}
+
+.rslides {
   position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
 
 //slider
@@ -405,7 +437,24 @@ body {
 //portfolio
 
 
+//our team
+.our-team {
+  //padding: 60px 60px;
+  padding-top: 60px;
 
+  .our-team-description
+  {
+    #font18;
+    text-align: center;
+
+    img
+    {
+      width: 100%;
+    }
+  }
+
+}
+//our team
 
 
 
