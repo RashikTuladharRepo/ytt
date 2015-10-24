@@ -1,0 +1,455 @@
+@font-face {font-family: 'segeo';src: url('../fonts/segeo.ttf');}
+
+#segeo-font() {font-family: "segeo";}
+#text-center() {text-align: center;}
+
+//font sizes functions
+#font12() {font-size: 12px;}
+#font14() {font-size: 14px;}
+#font16() {font-size: 16px;}
+#font18() {font-size: 18px;}
+
+//font sizes classes
+.font12 {font-size: 12px;}
+.font14 {font-size: 14px;}
+.font16 {font-size: 16px;}
+.font18 {font-size: 18px;}
+
+//colors functions
+#ytt-green() {color: #82C341;}
+#ytt-red() {color: #EF5323;}
+#ytt-blue() {color: #329FD9;}
+#ytt-yellow() {color: #FCB713;}
+#ytt-white {color: #FFFFFF;}
+
+
+//colors classes
+.ytt-green {color: #82C341;}
+.ytt-red {color: #EF5323;  }
+.ytt-blue {color: #329FD9;}
+.ytt-yellow {color: #FCB713;}
+.ytt-white {color: #FFFFFF;}
+
+
+//background functions
+#ytt-bg-green() {background-color: #82C341;}
+#ytt-bg-red() {background-color: #EF5323;}
+#ytt-bg-blue() {background-color: #329FD9;}
+#ytt-bg-yellow() {background-color: #FCB713;}
+#ytt-bg-white() {background-color: #FFFFFF;}
+#ytt-bg-grey() {background-color: #DEDFE4;}
+
+//background classes
+.ytt-bg-green {background-color: #82C341;}
+.ytt-bg-red {background-color: #EF5323;  }
+.ytt-bg-blue {background-color: #329FD9;}
+.ytt-bg-yellow {background-color: #FCB713;}
+.ytt-bg-white {background-color: #FFFFFF;}
+.ytt-bg-grey {background-color: #DEDFE4;}
+
+//visibility
+.visibility-hidden{visibility: hidden;}
+.visibility-visible{visibility: visible;}
+
+
+/*Social Networks*/
+.social {margin-top: 20px; a{text-decoration: none;}}
+.social-icon{width: 50px;height: 50px;background: #DDD;font-size: 30px;text-align: center;padding: 5px;color: #5e5e5e;}
+.facebook-hover:hover{background: #46629E;color: #FFF;cursor: pointer;}
+.google-hover:hover{background: #EA4436;color: #FFF;cursor: pointer;}
+.twitter-hover:hover{background: #0FB1F2;color: #FFF;cursor: pointer;}
+
+
+
+
+/*------------------------------------------------------Animation Blocks------------------------------------------------*/
+@-webkit-keyframes offers {
+  from   {margin-top: 8px;}
+  to {margin-top:0px; }
+}
+
+/* Standard syntax */
+@keyframes offers {
+  from   {margin-top: 8px;}
+  to {margin-top:0px; }
+}
+
+
+@-webkit-keyframes left-right {
+  from   {margin-left: 8px;}
+  to {margin-left:0px; }
+}
+
+/* Standard syntax */
+@keyframes left-right {
+  from   {margin-left: 8px;}
+  to {margin-left:0px; }
+}
+
+
+/*------------------------------------------------------Animation Blocks------------------------------------------------*/
+
+
+
+#updownanimation()
+{
+  animation-name: offers;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+#leftrightanimation()
+{
+  animation-name: left-right;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+
+//backoffer
+.backoffer {
+  width: 50px;
+  height: 50px;
+  #ytt-bg-red;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 99999;
+  a {
+    display: block;
+    i {
+      #ytt-white;
+      padding-top: -9px;
+      padding-left: 9px;
+      font-size: 50px;
+      #updownanimation;
+    }
+  }
+}
+
+//backtotop
+.backtotop {
+  width: 50px;
+  height: 50px;
+  #ytt-bg-blue;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
+  a {
+    display: block;
+    i {
+      #ytt-white;
+      padding-top: -9px;
+      padding-left: 9px;
+      font-size: 50px;
+    }
+  }
+}
+
+body {
+  #segeo-font;
+  margin: 0 auto;
+}
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 18px;
+  background-color: #f2f3f7;
+  /* change if the mask should have another color then white */
+  z-index: 9999999;
+  /* makes sure it stays on top */
+}
+#status {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  z-index: 9999;
+  padding-top: 10%;
+}
+
+.bg-overlay {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+
+
+
+
+.logo-header {
+  img {
+    height: 80px;
+  }
+}
+
+//@media (max-width: 765px){
+//  .logo-header {
+//    display: none;
+//  }
+//}
+
+@media (max-width: 920px){
+  .logo-header {
+    display: none;
+  }
+}
+
+@media (min-width: 765px) and (min-width: 920px){
+  .logo-header {
+    display: block;
+  }
+  .navbar-brand
+  {
+    display: none;
+  }
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  height: 70px;
+  background: #FFF;
+  border-bottom: none;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 7px 6px -4px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 7px 6px -4px rgba(0,0,0,0.3);
+  box-shadow: 0px 7px 6px -4px rgba(0,0,0,0.3);
+
+  .navbar-header {
+    button {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .nav.navbar-nav li.active a {
+    #ytt-red;
+    background: #ffffff;
+  }
+
+  .navbar-brand {
+    height: 70px;
+    line-height: 40px;
+  }
+
+  .nav li {
+    background: #ffffff;
+    #font18;
+  }
+
+  .nav li > a {
+    #ytt-blue;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: left;
+
+    &:hover {
+      #ytt-green;
+    }
+
+    .active {
+      #ytt-red;
+    }
+  }
+}
+
+
+//slider
+
+.slider {
+  height: 500px;
+  //background-image: url('http://jojarvis.com/assets/img/slider-images/illustration_web-design.jpg');
+  background-image: url('../img/slid.jpg');
+  //background-attachment: fixed;
+  //background-size: cover;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+//slider
+
+
+
+//services
+.services
+{
+  //padding: 60px 60px;
+  padding-top: 60px;
+  .service-lists
+  {
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .service-images
+  {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin-top: 8%;
+    margin-bottom: 2%;
+
+    i
+    {
+      font-size: 150px;
+      text-align: center;
+      margin: 22px;
+      margin-top: 25px;
+      display: block;
+      cursor: pointer;
+    }
+
+  }
+
+  .service-description
+  {
+    #font18;
+    text-align: justify;
+
+    img
+    {
+      width: 100%;
+    }
+  }
+
+  .other-service-description
+  {
+    padding-top: 30px;
+
+    p
+    {
+      #font18;
+      text-align: justify;
+    }
+  }
+
+}
+//services
+
+
+//process
+.process {
+  //padding: 60px 60px;
+  padding-top: 60px;
+
+  .steps-flow
+  {
+    margin: 30px 30px;
+
+    img
+    {
+      width: 100%;
+    }
+
+    p
+    {
+      #font18;
+    }
+  }
+}
+//process
+
+
+
+//portfolio
+
+.nav-pills
+{
+  #font18;
+  #segeo-font;
+}
+
+.portfolio {
+  padding-top: 60px;
+
+  .portfolio-descriptions
+  {
+    padding-top: 20px;
+  }
+
+}
+
+#mixItUp
+{
+  img
+  {
+    width: 100% !important;
+  }
+
+  .mix{
+    display: none;
+  }
+}
+
+//portfolio
+
+
+
+
+
+
+//contact
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .contact-description
+  {
+    p
+    {
+      #font18;
+    }
+  }
+
+  .quick-links
+  {
+    .quick-links-description
+    {
+      #font18;
+      a
+      {
+        text-decoration: none;
+      }
+
+      img
+      {
+        #leftrightanimation;
+      }
+    }
+
+  }
+
+}
+//contact
+
+//footer
+footer
+{
+  border-top: 1px solid #dddddd;
+  p{
+    #font18;
+    text-align: left;
+    font-weight: 500;
+  }
+}
+//footer
