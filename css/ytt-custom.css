@@ -376,6 +376,9 @@ body {
 .portfolio .portfolio-descriptions {
   padding-top: 20px;
 }
+#mixItUp .portfolios-list {
+  margin-bottom: 25px;
+}
 #mixItUp img {
   width: 100% !important;
 }
@@ -411,6 +414,61 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease;
+}
+.modal-header,
+h4 {
+  background-color: #82C341;
+  color: white !important;
+  text-align: center;
+  font-size: 30px;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  background-color: #EF5323 !important;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  color: #FFFFFF;
+}
+.close:hover {
+  opacity: 1;
+  background-color: #EF5323 !important;
+  color: #FFFFFF;
+}
+.modal-footer {
+  background-color: #f9f9f9;
+}
+.project-form label {
+  font-size: 16px;
+  font-family: "segeo";
+  font-weight: 100;
+  color: #8c8c8c;
+}
+.project-form select,
+.project-form input[type="text"],
+.project-form input[type="email"] {
+  color: #82C341;
+  font-size: 18px;
+  height: 45px;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 1px !important;
+  box-shadow: none;
+}
+.project-form textarea {
+  width: 100%;
+  height: 80px;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 1px !important;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+.project-form .send-quote {
+  height: 40px !important;
 }
 footer {
   border-top: 1px solid #dddddd;

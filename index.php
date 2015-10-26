@@ -17,10 +17,6 @@
 
 <body id="home" data-spy="scroll" data-target="#myNavbar" data-offset="80">
 
-
-
-
-
 <div class="bg-overlay"></div>
 <div id="preloader">
     <div id="status"><img src="img/preloader.gif"><br>
@@ -69,9 +65,6 @@
     </div>
 </nav>
 
-
-
-
 <!--slider-->
 <section class="container-fluid slider" id="slider">
     <ul class="rslides">
@@ -85,7 +78,7 @@
 
 
 <!--services-->
-<section id="services" id="#" class="services visibility-hidden">
+<section id="services" class="services visibility-hidden">
     <div class="container-fluid">
         <h2 class="ytt-red"><i class="fa fa-check">&nbsp;</i>What Do We Do?</h2>
     </div>
@@ -348,17 +341,17 @@
         <!-- start of tab panes -->
         <div class="tab-content col-md-10">
             <div class="row" id="mixItUp">
-                <div class="col-md-4 col-sm-12 mix webdevelopment">
-                    <img src="img/process/step4.jpg" class="img-responsive img-thumbnail"/>
+                <div id="pop" class="col-md-4 col-sm-12 mix webdevelopment portfolios-list">
+                    <img src="img/process/step4.jpg" class="img-responsive img-thumbnail" alt="www.rashik.com.np"/>
                 </div>
-                <div class="col-md-4 mix mobileapp">
-                    <img src="img/process/step1.jpg" class="img-responsive img-thumbnail"/>
+                <div id="pop" class="col-md-4 mix mobileapp portfolios-list">
+                    <img src="img/process/step1.jpg" class="img-responsive img-thumbnail" alt="step1"/>
                 </div>
-                <div class="col-md-4 mix graphics">
-                    <img src="img/process/step2.jpg" class="img-responsive img-thumbnail"/>
+                <div id="pop" class="col-md-4 mix graphics portfolios-list">
+                    <img src="img/process/step2.jpg" class="img-responsive img-thumbnail" alt="step2"/>
                 </div>
-                <div class="col-md-4 mix contents">
-                    <img src="img/process/step3.jpg" class="img-responsive img-thumbnail"/>
+                <div id="pop" class="col-md-4 mix contents portfolios-list">
+                    <img src="img/process/step3.jpg" class="img-responsive img-thumbnail" alt="step3"/>
                 </div>
             </div>
         </div>
@@ -375,7 +368,6 @@
     <div class="container-fluid">
         <h2 class="ytt-green"><i class="fa fa-user">&nbsp;</i>Our Clients Thought On Us!</h2>
     </div>
-
 
     <section id="testimonials">
 
@@ -446,14 +438,9 @@
                     </div>
                 </li>
             </ul><!-- .testimonials-line -->
-
         </div><!-- .testimonials-wrapper -->
-
     </section><!-- .testimonials -->
-
 </section>
-
-
 
 <!--contact-->
 <section id="contact" class="contact visibility-hidden">
@@ -516,37 +503,7 @@
     </p>
 </footer>
 
-
-
-
-
-
-
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Confirmation</h4>
-            </div>
-            <div class="modal-body">
-                <p>Do you want to save changes you made to document before closing?</p>
-                <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
-                <a id="testclick" class="btn btn-primary">click</a>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
+<?php include "includes/modals.php"; ?>
 
 
 
@@ -557,9 +514,24 @@
 <script src="js/responsiveslides.min.js"></script>
 <script type="text/javascript" src="js/alpha.js"></script>
 <script>
-    $("#backoffer").click(function(){
-        $("#myModal").modal('show');
+    $(document).ready(function(){
+        $("#backoffer").click(function(){
+            $("#have-project").modal();
+        });
+
+        $(".portfolios-list").click(function(){
+            var src = $(this).children("img").attr("src");
+            var alt = $(this).children("img").attr("alt");
+            $('#imagepreview').attr('src', src);
+            $("#portfolioLabel").text(alt);
+            $('#imagemodal').modal('show');
+        });
+
     });
+
+
+
 </script>
+
 </body>
 </html>
