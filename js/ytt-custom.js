@@ -6,6 +6,12 @@ $(window).load(function() {
     $('body').delay(350).css({'overflow':'visible'});
 });
 
+
+//tooltip
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
 //for easy scrolling
 $("nav ul li a[href^='#']").on('click', function(e) {
     // prevent default anchor click behavior
@@ -57,9 +63,32 @@ $(window).on('scroll', function() {
 
 
 
-
+//navbar animation
 $('.navbar').addClass('animated flipInX');
 
+
+//logo color change
+$("#logo-icon").addClass("ytt-1 icon rashik-young");
+setInterval(function() {
+    $("#logo-icon").toggleClass(function(index, className) {
+        var s = className.split("ytt-")[1],
+            n = s.slice(0, 1);
+        return "ytt-" + n + " ytt-" + (n > 3 ? 1 : ++n);
+    });
+}, 10000);
+
+
+//slider
+$(function() {
+    $(".rslides").responsiveSlides({
+        auto: true,             // Boolean: Animate automatically, true or false
+        speed: 3000,            // Integer: Speed of the transition, in milliseconds
+        timeout: 6000           // Integer: Time between slide transitions, in milliseconds
+    });
+});
+
+
+//scroll animations
 $(window).scroll(function() {
     $('#services').each(function () {
         var imagePos = $(this).offset().top;
@@ -102,6 +131,8 @@ $(window).scroll(function() {
     });
 });
 
+
+
 //portfolio
 $(function(){
     $('#mixItUp').mixItUp();
@@ -110,6 +141,11 @@ $(function(){
 $('ul.nav-pills li a').click(function (e) {
     $('ul.nav-pills li.active').removeClass('active')
     $(this).parent('li').addClass('active')
+});
+
+//testimonials
+$(document).ready(function(){
+    $('#testimonials').alpha();
 });
 
 

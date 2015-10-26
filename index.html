@@ -12,52 +12,30 @@
     <link rel="stylesheet" type="text/css" href="css/hover-min.css">
     <link rel="stylesheet" type="text/css" href="css/ytt-custom.css">
     <link href="css/alpha.css" rel="stylesheet" type="text/css"/>
-    <style>
-        @media (min-width: 768px) and (max-width: 920px) {
-            .navbar-collapse.collapse {
-                display: none !important;
-            }
-            .navbar-collapse.collapse.in {
-                display: block !important;
-            }
-            .navbar-header .collapse, .navbar-toggle {
-                display:block !important;
-            }
-            .navbar-header {
-                float:none;
-            }
-        }
-    </style>
 </head>
+
+
 <body id="home" data-spy="scroll" data-target="#myNavbar" data-offset="80">
 
+
+
+
+
 <div class="bg-overlay"></div>
-<!-- Preloader start here -->
 <div id="preloader">
     <div id="status"><img src="img/preloader.gif"><br>
         <small>Please Wait Untill The Page Loads Completely.....</small>
     </div>
 </div>
-<!-- Preloader end here -->
+
+
+
 
 <div id="backoffer" class="backoffer"><a href="#home"  data-toggle="tooltip" data-placement="top" data-original-title="Have A Project??"><i class="fa fa-question"></i></a></div>
 <div id="backtotop" class="backtotop"><a href="#home"><i class="fa fa-angle-up hvr-bob"></i></a></div>
 
-<div class="logo-header container-fluid">
-    <div class="col-md-8 hvr-bob"  style="font-size: 30px;">
-        <img src="img/logo.png">
-        <span class="ytt-green"><span class="ytt-red">Y</span>oung</span>
-        <span class="ytt-blue">Thinkers</span>
-        <span class="ytt-yellow">Technology</span>
-    </div>
-    <div class="col-md-4 text-right font16">
-        <br>
-        <span class="ytt-red font18">+977-1-9841840193&nbsp;<i class="fa fa-phone">&nbsp;</i></span><br>
-        <span class="ytt-green font18">info@youngthinkerstechnology.com&nbsp;<i class="fa fa-comments">&nbsp;</i></span><br>
-    </div>
-</div>
 
-<nav id="myNavbar" class="navbar navbar-default navbar-static-top" data-spy="affix" data-offset-top="50" role="navigation">
+<nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="50" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -66,21 +44,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand hvr-buzz-out" href="javascript:void(0);" style="font-size: 25px;">
-                <span class="ytt-red icon rashik-young" style="font-size: 50px;"></span>
-                <span class="ytt-green"><span class="ytt-yellow">Y</span>oung</span>
-                <span class="ytt-blue">Thinkers</span>
-                <!--<span class="ytt-yellow">Technology</span>-->
+
+            <a class="navbar-brand"><span id="logo-icon" style="font-size: 70px;position: absolute; margin-top: -15px;"></span></a>
+            <a class="navbar-brand logo-font">
+                <span class="font18">
+                    <span class="ytt-green">Young</span>
+                    <span class="ytt-blue">Thinkers</span>
+                    <span class="ytt-red">Technology</span>
+                </span>
             </a>
+
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#home" class="hvr-buzz-out" class="hvr-buzz-out"><i class="fa fa-home" style="font-size:20px;"></i></a></li>
-                <li><a href="#services" class="hvr-buzz-out"><i class="fa fa-wrench">&nbsp;</i>Services</a></li>
-                <li><a href="#process" class="hvr-buzz-out"><i class="fa fa-line-chart">&nbsp;</i>How We Work</a></li>
-                <li><a href="#portfolio" class="hvr-buzz-out"><i class="fa fa-tags">&nbsp;</i>Portfolio</a></li>
-                <li><a href="#contact" class="hvr-buzz-out"><i class="fa fa-mobile-phone">&nbsp;</i>Contact Us</a></li>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#home"><i class="fa fa-home" style="font-size:20px;"></i></a></li>
+                <li><a href="#services"><i class="fa fa-wrench">&nbsp;</i>Services</a></li>
+                <li><a href="#process"><i class="fa fa-line-chart">&nbsp;</i>How We Work</a></li>
+                <li><a href="#portfolio"><i class="fa fa-tags">&nbsp;</i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-phone">&nbsp;</i>Contact Us</a></li>
             </ul>
         </div>
 
@@ -109,74 +91,95 @@
     </div>
 
     <div class="container-fluid">
-        <div class="col-md-3 service-description">
-            <img src="img/services/webdev.png" class="img-responsive">
-            <p>
-                <strong>Web Development</strong><br>
-                Get An Amazing Responsive Website To Boost Your Business.
-            </p>
+        <div class="col-md-3">
+            <div class="service-description">
+                <img src="img/services/webdev.png" class="img-responsive">
+
+                <p>
+                    <strong>Web Development</strong><br>
+                    Get An Amazing Responsive Website To Boost Your.
+                </p>
+            </div>
         </div>
 
-        <div class="col-md-3 service-description">
-            <img src="img/services/mobileapp.png" class="img-responsive">
-            <p>
-                <strong>Mobile Application</strong><br>
-                Get application for IOS and Android Platforms.
-            </p>
+        <div class="col-md-3">
+            <div class="service-description">
+                <img src="img/services/mobileapp.png" class="img-responsive">
+
+                <p>
+                    <strong>Mobile Application</strong><br>
+                    Get application for IOS and Android Platforms.
+                </p>
+            </div>
         </div>
 
-        <div class="col-md-3 service-description">
-            <img src="img/services/graphics.png" class="img-responsive">
-            <p>
-                <strong>Graphics Designing</strong><br>
-                One Stop Solution For All Browser And Online Based Web Application.
-            </p>
+        <div class="col-md-3">
+            <div class="service-description">
+                <img src="img/services/graphics.png" class="img-responsive">
+
+                <p>
+                    <strong>Graphics Designing</strong><br>
+                    One Stop Solution For All Browser And Online Based.
+                </p>
+            </div>
         </div>
 
-        <div class="col-md-3 service-description">
-            <img src="img/services/domain.png" class="img-responsive">
-            <p>
-                <strong>Domain Registration / Web Hosting</strong><br>
-                Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
-            </p>
+        <div class="col-md-3">
+            <div class="service-description">
+                <img src="img/services/domain.png" class="img-responsive">
+
+                <p>
+                    <strong>Web Services</strong><br>
+                    Make All The Right Noises With Young Thinkers.
+                </p>
+            </div>
         </div>
 
-        <div class="col-md-3 service-description">
-            <img src="img/services/seo.png" class="img-responsive">
-            <p>
-                <strong>SEO</strong><br>
-                Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
-            </p>
+        <div class="col-md-3">
+            <div class="service-description">
+                <img src="img/services/seo.png" class="img-responsive">
+
+                <p>
+                    <strong>SEO</strong><br>
+                    Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
+                </p>
+            </div>
         </div>
 
-        <div class="col-md-3 service-description">
-            <img src="img/services/contentwriting.png" class="img-responsive">
-            <p>
-                <strong>Content Writing</strong><br>
-                Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
-            </p>
+        <div class="col-md-3">
+            <div class="service-description">
+                <img src="img/services/contentwriting.png" class="img-responsive">
+
+                <p>
+                    <strong>Content Writing</strong><br>
+                    Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
+                </p>
+            </div>
         </div>
 
-        <div class="col-md-3 service-description">
-            <img src="img/services/technical.png" class="img-responsive">
-            <p>
-                <strong>Technical Assistance</strong><br>
-                Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
-            </p>
+        <div class="col-md-3">
+            <div class="service-description">
+                <img src="img/services/technical.png" class="img-responsive">
+
+                <p>
+                    <strong>Technical Assistance</strong><br>
+                    Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
+                </p>
+            </div>
         </div>
 
     </div>
 
-    <div class="container-fluid other-service-description">
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-            of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-    </div>
+    <!--<div class="container-fluid other-service-description">-->
+        <!--<p>-->
+            <!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's-->
+            <!--standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to-->
+            <!--make a type specimen book. It has survived not only five centuries, but also the leap into-->
+            <!--electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release-->
+            <!--of Letraset sheets containing Lorem Ipsum passages,-->
+            <!--and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.-->
+        <!--</p>-->
+    <!--</div>-->
 
 </section>
 <!--services-->
@@ -270,17 +273,16 @@
         </div>
     </div>
     <!-- step 5-->
-
 </section>
 <!--process-->
 
 
-<!--portfolio-->
+<!--team-->
 <section id="our-team" class="our-team">
     <div class="container-fluid">
         <h2 class="ytt-blue"><i class="fa fa-users">&nbsp;</i>Our Hardworking Team</h2>
     </div>
-    <!--<img src="img/team.jpg" class="img-responsive">-->
+    <!--<img src="img/team/team.jpg" class="img-responsive">-->
 
     <div class="container-fluid">
         <div class="row">
@@ -321,9 +323,8 @@
             </div>
         </div>
     </div>
-
 </section>
-
+<!--team-->
 
 
 <!--portfolio-->
@@ -511,38 +512,54 @@
     <p>&nbsp;&nbsp;
         <span class="ytt-green">Young</span>
         <span class="ytt-blue">Thinkers</span>
-        <span class="ytt-red">Technology</span> <span class="ytt-yellow">&copy;</span> <span class="ytt-blue">2015</span></p>
+        <span class="ytt-red">Technology</span> <span class="ytt-yellow">&copy;</span> <span class="ytt-blue">2015</span>
+    </p>
 </footer>
+
+
+
+
+
+
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <p>Do you want to save changes you made to document before closing?</p>
+                <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                <a id="testclick" class="btn btn-primary">click</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/jquery.mixitup.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/ytt-custom.js"></script>
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script>
-
 <script src="js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="js/alpha.js"></script>
 <script>
-    $(function() {
-        $(".rslides").responsiveSlides({
-            auto: true,             // Boolean: Animate automatically, true or false
-            speed: 3000,            // Integer: Speed of the transition, in milliseconds
-            timeout: 6000           // Integer: Time between slide transitions, in milliseconds
-        });
+    $("#backoffer").click(function(){
+        $("#myModal").modal('show');
     });
 </script>
-
-
-<script type="text/javascript" src="js/alpha.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#testimonials').alpha();
-    })
-</script>
-
 </body>
 </html>
