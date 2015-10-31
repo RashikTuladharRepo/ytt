@@ -27,11 +27,11 @@
 
 
 
-<div id="backoffer" class="backoffer"><a href="#home"  data-toggle="tooltip" data-placement="top" data-original-title="Have A Project??"><i class="fa fa-question"></i></a></div>
+<div id="backoffer" class="backoffer"><a href="javascript:void(0);"  data-toggle="tooltip" data-placement="top" data-original-title="Have A Project??"><i class="fa fa-question"></i></a></div>
 <div id="backtotop" class="backtotop"><a href="#home"><i class="fa fa-angle-up hvr-bob"></i></a></div>
 
 
-<nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="50" role="navigation">
+<nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -483,9 +483,9 @@
                 <span class="ytt-green">Quick</span>
                 <span class="ytt-blue">Links</span>
             </h3>
-            <span class="quick-links-description"><a href="">Know Who We Are?</a></span>
+            <span class="quick-links-description" id="about-us"><a href="#">Know Who We Are?</a></span>
             <br>
-            <span class="quick-links-description">
+            <span class="quick-links-description" id="project">
                 <a href="#">Have A Project?</a>
                 <img src="img/quote.png" class="img-responsive" style="width: 100px; height: 100px;">
             </span>
@@ -517,6 +517,14 @@
     $(document).ready(function(){
         $("#backoffer").click(function(){
             $("#have-project").modal();
+        });
+
+        $("#project").click(function(){
+            $("#have-project").modal();
+        });
+
+        $("#about-us").click(function(){
+            $("#who-are-we").modal();
         });
 
         $(".portfolios-list").click(function(){

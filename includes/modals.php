@@ -1,11 +1,3 @@
-/**
- * Created by PhpStorm.
- * User: Rashik
- * Date: 10/26/2015
- * Time: 7:18 PM
- */
-
-
 <!-- Modal -->
 <div class="modal fade" id="have-project" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -89,13 +81,61 @@ Please fill the form below to tell us what you want us to carry out for you. We 
                 <div class="col-md-12">
                     <div class="col-md-6"><img src="" id="imagepreview" class="img-responsive"></div>
                     <div class="col-md-6">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <p class="font18">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            <br>
+                            <span class="ytt-red">Technologies Used:</span>
                         </p>
+                        <span style="font-size: 40px;">
+                            <i class="icon rashik-html5 ytt-html"></i>
+                            <i class="icon rashik-css3 ytt-css"></i>
+                            <i class="icon rashik-bootstrap ytt-bootstrap"></i>
+                            <i class="icon rashik-prog-jquery ytt-jquery"></i>
+                            <i class="icon rashik-prog-phplight ytt-php"></i>
+                        </span>
+                        <br>
+                        <a href="javascript:void(0)"class="font18" style="text-decoration: none;">Visit The Site</a>
                     </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Modal Who Are We-->
+<div class="modal fade" id="who-are-we" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4><span class="fa fa-users"></span> Who Are We?</h4>
+                <p class="font16">
+                    Young Thinkers Technology
+                </p>
+            </div>
+            <div class="modal-body" style="height: 700px;">
+                <img src="img/logo.png" class="img-responsive" id="about-us-image">
+                <form role="form" class="project-form">
+                    <div class="col-md-12 font18 text-justify">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+<br><br>
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                </form>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modal-footer">
+                <p class="text-center font16 ytt-red">
+                    Your Satisfication Is Our Goal.
+                </p>
+            </div>
+        </div>
+
     </div>
 </div>
