@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/custom-fonts.css">
     <link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
     <link rel="stylesheet" type="text/css" href="css/ytt-custom.css">
     <link href="css/alpha.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -66,8 +67,8 @@
 </nav>
 
 <!--slider-->
-<section class="container-fluid slider" id="slider">
-    <ul class="rslides">
+<section class="container-fluid slider flexslider" id="slider">
+    <ul class="slides">
         <li><img src="img/slider-images/slid.jpg" alt=""></li>
         <li><img src="img/slider-images/slid2.jpg" alt=""></li>
         <li><img src="img/slider-images/slid3.jpg" alt=""></li>
@@ -84,10 +85,24 @@
     </div>
 
     <div class="container-fluid">
-        <div class="col-md-3">
-            <div class="service-description">
-                <img src="img/services/webdev.png" class="img-responsive">
 
+        <div class="col-md-2">
+            <div class="service-description">
+                <div class="service-icon-holder">
+                    <span class="service-icons fa fa-globe ytt-green hvr-bob"></span>
+                </div>
+                <p>
+                    <strong>Domain Registration/ Web Hosting</strong><br>
+                    Get An Amazing Responsive Website To Boost Your.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="service-description">
+                <div class="service-icon-holder">
+                    <span class="service-icons fa fa-html5 ytt-html hvr-float"></span>
+                </div>
                 <p>
                     <strong>Web Development</strong><br>
                     Get An Amazing Responsive Website To Boost Your.
@@ -95,10 +110,11 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="service-description">
-                <img src="img/services/mobileapp.png" class="img-responsive">
-
+                <div class="service-icon-holder">
+                    <span class="service-icons fa fa-android ytt-android hvr-rotate"></span>
+                </div>
                 <p>
                     <strong>Mobile Application</strong><br>
                     Get application for IOS and Android Platforms.
@@ -106,10 +122,11 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="service-description">
-                <img src="img/services/graphics.png" class="img-responsive">
-
+                <div class="service-icon-holder">
+                    <span class="service-icons fa fa-paint-brush ytt-yellow hvr-wobble-horizontal"></span>
+                </div>
                 <p>
                     <strong>Graphics Designing</strong><br>
                     One Stop Solution For All Browser And Online Based.
@@ -117,10 +134,11 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="service-description">
-                <img src="img/services/domain.png" class="img-responsive">
-
+                <div class="service-icon-holder">
+                    <span class="service-icons fa fa-cogs ytt-blue hvr-rotate"></span>
+                </div>
                 <p>
                     <strong>Web Services</strong><br>
                     Make All The Right Noises With Young Thinkers.
@@ -128,10 +146,11 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="service-description">
-                <img src="img/services/seo.png" class="img-responsive">
-
+                <div class="service-icon-holder">
+                    <span class="service-icons fa fa-google ytt-yellow hvr-bounce-in"></span>
+                </div>
                 <p>
                     <strong>SEO</strong><br>
                     Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
@@ -139,10 +158,11 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="service-description">
-                <img src="img/services/contentwriting.png" class="img-responsive">
-
+                <div class="service-icon-holder">
+                    <span class="service-icons fa fa-file-text ytt-blue hvr-buzz"></span>
+                </div>
                 <p>
                     <strong>Content Writing</strong><br>
                     Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
@@ -150,10 +170,11 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="service-description">
-                <img src="img/services/technical.png" class="img-responsive">
-
+                <div class="service-icon-holder">
+                    <span class="service-icons fa fa-link ytt-green hvr-grow"></span>
+                </div>
                 <p>
                     <strong>Technical Assistance</strong><br>
                     Make All The Right Noises With Young Thinkers. Give An Impression To Last A Lifetime.
@@ -279,41 +300,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/ceo.jpg" class="img-responsive">
-                <p>
-                    <strong>CEO</strong><br>
-                    Chief Executive Officer
-                </p>
-            </div>
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/projmanager.jpg" class="img-responsive">
-                <p>
-                    <strong>Project Manager</strong><br>
-                    Project Manager
-                </p>
-            </div>
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/webdeveloper.jpg" class="img-responsive">
-                <p>
-                    <strong>Web Developer</strong><br>
-                    Web Developer
-                </p>
-            </div>
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/mobileappdev.jpg" class="img-responsive">
-                <p>
-                    <strong>Mobile App Developer</strong><br>
-                    Mobile App Developer
-                </p>
-            </div>
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/seoexpert.jpg" class="img-responsive">
-                <p>
-                    <strong>SEO Expert</strong><br>
-                    SEO Expert
-                </p>
-            </div>
+            <img src="img/team/team.jpg" class="img-responsive">
         </div>
     </div>
 </section>
@@ -509,6 +496,7 @@
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.mixitup.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/ytt-custom.js"></script>
 <script src="js/responsiveslides.min.js"></script>
@@ -537,6 +525,12 @@
 
     });
 
+
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "fade"
+        });
+    });
 
 
 </script>

@@ -36,6 +36,7 @@
 .ytt-php {color:#6B7EB9;}
 .ytt-bootstrap {color:#5D317E;}
 .ytt-asp {color:#1A4395;}
+.ytt-android{color:#99CC00;}
 
 //color for rotation
 .ytt-1 {color: #82C341;}
@@ -307,38 +308,6 @@ body {
 .slider {
   padding-top: 90px;
 }
-
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-}
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-}
 //slider
 
 
@@ -375,10 +344,8 @@ body {
 
   .service-description
   {
+    margin: 0 auto;
     #font18;
-    text-align: justify;
-    //background: #D1D0CC;
-    outline:1px solid #D1D0CC;
     padding:10px;
     margin-top: 25px;
     -webkit-transition: background 1s;
@@ -386,15 +353,34 @@ body {
     -ms-transition: background 1s;
     -o-transition: background 1s;
     transition: background 1s;
+    text-align: center;
     img
     {
       width: 100%;
     }
 
-    &:hover
+    p
     {
-      background: #DDDDDB;
-      cursor: pointer;
+      #font14;
+      text-align: justify;
+      strong
+      {
+        #font18;
+        text-align: center !important;
+      }
+    }
+
+    .service-icon-holder {
+      margin-left: auto;
+      margin-right: auto;
+
+      .service-icons {
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        font-size: 80px;
+        text-align: center;
+      }
     }
   }
 
