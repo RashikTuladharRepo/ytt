@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/custom-fonts.css">
     <link rel="stylesheet" type="text/css" href="css/hover-min.css">
-    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
     <link rel="stylesheet" type="text/css" href="css/ytt-custom.css">
     <link href="css/alpha.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -32,7 +31,7 @@
 <div id="backtotop" class="backtotop"><a href="#home"><i class="fa fa-angle-up hvr-bob"></i></a></div>
 
 
-<nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="50" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -67,8 +66,8 @@
 </nav>
 
 <!--slider-->
-<section class="container-fluid slider flexslider" id="slider">
-    <ul class="slides">
+<section class="container-fluid slider" id="slider">
+    <ul class="rslides">
         <li><img src="img/slider-images/slid.jpg" alt=""></li>
         <li><img src="img/slider-images/slid2.jpg" alt=""></li>
         <li><img src="img/slider-images/slid3.jpg" alt=""></li>
@@ -185,14 +184,14 @@
     </div>
 
     <!--<div class="container-fluid other-service-description">-->
-        <!--<p>-->
-            <!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's-->
-            <!--standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to-->
-            <!--make a type specimen book. It has survived not only five centuries, but also the leap into-->
-            <!--electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release-->
-            <!--of Letraset sheets containing Lorem Ipsum passages,-->
-            <!--and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.-->
-        <!--</p>-->
+    <!--<p>-->
+    <!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's-->
+    <!--standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to-->
+    <!--make a type specimen book. It has survived not only five centuries, but also the leap into-->
+    <!--electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release-->
+    <!--of Letraset sheets containing Lorem Ipsum passages,-->
+    <!--and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.-->
+    <!--</p>-->
     <!--</div>-->
 
 </section>
@@ -205,88 +204,75 @@
         <h2 class="ytt-green"><i class="fa fa-gears">&nbsp;</i>So How Do We Do It?</h2>
     </div>
 
-    <!-- step 1-->
-    <div class="container-fluid steps-flow" style="background: #B0E0EC;">
-        <div class="col-md-4">
-            <img src="img/process/step1.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-8">
-            <h1>Analysis And Business Requirements.</h1>
-            <p class="text-justify">
-                The business analyst then sits with the project manager to discuss about the project.
-                An appropriate number of developers, designers with required skills team up with the project manager
-                in order to start the project.
-                The project starts with designing/ development of a prototype and wireframing the project structure.
-            </p>
-        </div>
+    <div class="container main">
+        <ul class="cbp_tmtimeline">
+            <li>
+                <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>Step I</span></time>
+                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel">
+                    <h2>Analysis And Business Requirements.</h2>
+                    <p>
+                        The business analyst then sits with the project manager to discuss about the project.
+                        An appropriate number of developers, designers with required skills team up with the project manager
+                        in order to start the project.
+                        The project starts with designing/ development of a prototype and wireframing the project structure.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>Step II</span></time>
+                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel">
+                    <h2>Prototyping And Designing</h2>
+                    <p>
+                        The business analyst then sits with the project manager to discuss about the project. An appropriate
+                        number of developers, designers with required skills team up with the project manager in order to start
+                        the project. The project starts with designing/ development of a prototype and wireframing the project
+                        structure.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>Step III</span></time>
+                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel">
+                    <h2>Coding And Development</h2>
+                    <p>
+                        After the client confirms the prototype and all the system specification, the newly formed crew will
+                        start the development to challenge the client requirement and the deadline. The development involves
+                        continuous co-ordination and meeting of the project manager with the business analyst so that no jobs
+                        are left behind.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>Step IV</span></time>
+                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel">
+                    <h2>Testing And Checking</h2>
+                    <p>
+                        The project is not completed until and unless it is bug free. Quality assurance involves continuous
+                        testing of each and every part of the project. Even though testing is down during the development phase,
+                        a complete testing is done by the Quality Analyst so as to ensure quality product to the client.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime" datetime="2013-04-16 21:30"><span>Step V</span></time>
+                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel">
+                    <h2>Delivery Of System/ Product</h2>
+                    <p>
+                        After the quality assurance team confirms the system bug free, the product is finally delivered to the
+                        client. Delivery involves necessary training to the users of the system and continuous support until and
+                        unless the client is easy to go.
+                    </p>
+                </div>
+            </li>
+        </ul>
     </div>
-    <!-- step 1-->
 
-    <!-- step 2-->
-    <div class="container-fluid steps-flow" style="background: #B0E0EC;">
-        <div class="col-md-4">
-            <img src="img/process/step2.jpg">
-        </div>
-        <div class="col-md-8">
-            <h1>Prototyping And Designing.</h1>
-            <p class="text-justify">
-                The business analyst then sits with the project manager to discuss about the project. An appropriate
-                number of developers, designers with required skills team up with the project manager in order to start
-                the project. The project starts with designing/ development of a prototype and wireframing the project
-                structure.
-            </p>
-        </div>
-    </div>
-    <!-- step 2-->
 
-    <!-- step 3-->
-    <div class="container-fluid steps-flow" style="background: #FAF7CE;">
-        <div class="col-md-4">
-            <img src="img/process/step3.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-8">
-            <h1>Coding And Development.</h1>
-            <p class="text-justify">
-                After the client confirms the prototype and all the system specification, the newly formed crew will
-                start the development to challenge the client requirement and the deadline. The development involves
-                continuous co-ordination and meeting of the project manager with the business analyst so that no jobs
-                are left behind.
-            </p>
-        </div>
-    </div>
-    <!-- step 3-->
-
-    <!-- step 4-->
-    <div class="container-fluid steps-flow" style="background: #E4C6D2;">
-        <div class="col-md-4">
-            <img src="img/process/step4.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-8">
-            <h1>Testing And Checking.</h1>
-            <p class="text-justify">
-                The project is not completed until and unless it is bug free. Quality assurance involves continuous
-                testing of each and every part of the project. Even though testing is down during the development phase,
-                a complete testing is done by the Quality Analyst so as to ensure quality product to the client.
-            </p>
-        </div>
-    </div>
-    <!-- step 4-->
-
-    <!-- step 5-->
-    <div class="container-fluid steps-flow" style="background: #82C341;">
-        <div class="col-md-4">
-            <img src="img/process/step5.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-8">
-            <h1>Delivery Of System/ Product.</h1>
-            <p class="text-justify">
-                After the quality assurance team confirms the system bug free, the product is finally delivered to the
-                client. Delivery involves necessary training to the users of the system and continuous support until and
-                unless the client is easy to go.
-            </p>
-        </div>
-    </div>
-    <!-- step 5-->
 </section>
 <!--process-->
 
@@ -300,7 +286,41 @@
 
     <div class="container-fluid">
         <div class="row">
-            <img src="img/team/team.jpg" class="img-responsive">
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/ceo.jpg" class="img-responsive">
+                <p>
+                    <strong>CEO</strong><br>
+                    Chief Executive Officer
+                </p>
+            </div>
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/projmanager.jpg" class="img-responsive">
+                <p>
+                    <strong>Project Manager</strong><br>
+                    Project Manager
+                </p>
+            </div>
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/webdeveloper.jpg" class="img-responsive">
+                <p>
+                    <strong>Web Developer</strong><br>
+                    Web Developer
+                </p>
+            </div>
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/mobileappdev.jpg" class="img-responsive">
+                <p>
+                    <strong>Mobile App Developer</strong><br>
+                    Mobile App Developer
+                </p>
+            </div>
+            <div class="col-md-3 our-team-description">
+                <img src="img/team/seoexpert.jpg" class="img-responsive">
+                <p>
+                    <strong>SEO Expert</strong><br>
+                    SEO Expert
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -470,7 +490,7 @@
                 <span class="ytt-green">Quick</span>
                 <span class="ytt-blue">Links</span>
             </h3>
-            <span class="quick-links-description" id="about-us"><a href="#">Know Who We Are?</a></span>
+            <span class="quick-links-description"><a href="">Know Who We Are?</a></span>
             <br>
             <span class="quick-links-description" id="project">
                 <a href="#">Have A Project?</a>
@@ -496,7 +516,6 @@
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.mixitup.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/ytt-custom.js"></script>
 <script src="js/responsiveslides.min.js"></script>
@@ -505,14 +524,6 @@
     $(document).ready(function(){
         $("#backoffer").click(function(){
             $("#have-project").modal();
-        });
-
-        $("#project").click(function(){
-            $("#have-project").modal();
-        });
-
-        $("#about-us").click(function(){
-            $("#who-are-we").modal();
         });
 
         $(".portfolios-list").click(function(){
@@ -526,10 +537,8 @@
     });
 
 
-    $(window).load(function() {
-        $('.flexslider').flexslider({
-            animation: "fade"
-        });
+    $("#project").click(function(){
+        $("#have-project").modal();
     });
 
 
