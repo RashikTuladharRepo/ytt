@@ -12,6 +12,85 @@
     <link rel="stylesheet" type="text/css" href="css/hover-min.css">
     <link rel="stylesheet" type="text/css" href="css/ytt-custom.css">
     <link href="css/alpha.css" rel="stylesheet" type="text/css"/>
+    <style>
+
+        .team-list .team-item {
+            padding: 0;
+            text-align: left;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 2px solid #e9003c; }
+        .team-list .team-item img {
+            margin: 0 auto;
+            display: block; }
+        .team-list .team-item .team-desc {
+            position: absolute;
+            width: 100%;
+            background: rgba(233, 0, 60, 0.7);
+            padding: 0.5rem 1rem;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            -webkit-transition: -webkit-transform 0.8s;
+            transition: transform 0.8s; }
+        .team-list .team-item .team-desc h3 {
+            color: #fff;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin: 0; }
+        .team-list .team-item .team-desc p {
+            color: #fff;
+            font-size: 0.875rem;
+            margin: 0; }
+        .team-list .team-item:hover .team-desc {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, -60px, 0);
+            -webkit-transition: -webkit-transform 0.8s;
+            transition: transform 0.8s; }
+        .team-list .team-item.current .team-desc {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, -60px, 0); }
+
+        .team-item-holder {
+            height: 37.5rem;
+            margin-top: 5rem; }
+
+        .team-content {
+            width: 74%;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0; }
+        .team-content img {
+            margin-bottom: 1rem;
+            -webkit-transform: translate3d(0, -55px, 0);
+            transform: translate3d(0, -55px, 0);
+            -webkit-transition: -webkit-transform 0.8s;
+            transition: transform 0.8s; }
+        .team-content .team-content-text {
+            opacity: 0;
+            -webkit-transition: opacity 0.8s;
+            transition: opacity 0.8s; }
+        .team-content .team-content-text p {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            text-align: left;
+            color: #636363; }
+        .team-content.current {
+            opacity: 1; }
+        .team-content.current img {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0px, 0);
+            -webkit-transition: -webkit-transform 0.8s;
+            transition: transform 0.8s; }
+        .team-content.current .team-content-text {
+            opacity: 1;
+            -webkit-transition: opacity 0.8s;
+            transition: opacity 0.8s; }
+
+    </style>
 </head>
 
 
@@ -180,19 +259,8 @@
                 </p>
             </div>
         </div>
-
     </div>
 
-    <!--<div class="container-fluid other-service-description">-->
-    <!--<p>-->
-    <!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's-->
-    <!--standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to-->
-    <!--make a type specimen book. It has survived not only five centuries, but also the leap into-->
-    <!--electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release-->
-    <!--of Letraset sheets containing Lorem Ipsum passages,-->
-    <!--and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.-->
-    <!--</p>-->
-    <!--</div>-->
 
 </section>
 <!--services-->
@@ -207,9 +275,9 @@
     <div class="container main">
         <ul class="cbp_tmtimeline">
             <li>
-                <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>Step I</span></time>
-                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
-                <div class="cbp_tmlabel">
+                <time class="cbp_tmtime ytt-red" datetime="2013-04-10 18:30"><span>Step I</span></time>
+                <div class="cbp_tmicon ytt-bg-red"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel ytt-bg-red">
                     <h2>Analysis And Business Requirements.</h2>
                     <p>
                         The business analyst then sits with the project manager to discuss about the project.
@@ -220,9 +288,9 @@
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>Step II</span></time>
-                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
-                <div class="cbp_tmlabel">
+                <time class="cbp_tmtime ytt-green" datetime="2013-04-11T12:04"><span>Step II</span></time>
+                <div class="cbp_tmicon ytt-bg-green"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel ytt-bg-green">
                     <h2>Prototyping And Designing</h2>
                     <p>
                         The business analyst then sits with the project manager to discuss about the project. An appropriate
@@ -233,9 +301,9 @@
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>Step III</span></time>
-                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
-                <div class="cbp_tmlabel">
+                <time class="cbp_tmtime ytt-yellow" datetime="2013-04-13 05:36"><span>Step III</span></time>
+                <div class="cbp_tmicon ytt-bg-yellow"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel ytt-bg-yellow">
                     <h2>Coding And Development</h2>
                     <p>
                         After the client confirms the prototype and all the system specification, the newly formed crew will
@@ -246,9 +314,9 @@
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>Step IV</span></time>
-                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
-                <div class="cbp_tmlabel">
+                <time class="cbp_tmtime ytt-blue" datetime="2013-04-15 13:15"><span>Step IV</span></time>
+                <div class="cbp_tmicon ytt-bg-blue"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel ytt-bg-blue">
                     <h2>Testing And Checking</h2>
                     <p>
                         The project is not completed until and unless it is bug free. Quality assurance involves continuous
@@ -258,9 +326,9 @@
                 </div>
             </li>
             <li>
-                <time class="cbp_tmtime" datetime="2013-04-16 21:30"><span>Step V</span></time>
-                <div class="cbp_tmicon"><span class="fa fa-user"></span></div>
-                <div class="cbp_tmlabel">
+                <time class="cbp_tmtime ytt-red" datetime="2013-04-16 21:30"><span>Step V</span></time>
+                <div class="cbp_tmicon ytt-bg-red"><span class="fa fa-user"></span></div>
+                <div class="cbp_tmlabel ytt-bg-red">
                     <h2>Delivery Of System/ Product</h2>
                     <p>
                         After the quality assurance team confirms the system bug free, the product is finally delivered to the
@@ -276,51 +344,57 @@
 </section>
 <!--process-->
 
-
 <!--team-->
 <section id="our-team" class="our-team">
     <div class="container-fluid">
         <h2 class="ytt-blue"><i class="fa fa-users">&nbsp;</i>Our Hardworking Team</h2>
     </div>
-    <!--<img src="img/team/team.jpg" class="img-responsive">-->
 
-    <div class="container-fluid">
+    <div class="container-fluid our-team-description">
         <div class="row">
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/ceo.jpg" class="img-responsive">
-                <p>
-                    <strong>CEO</strong><br>
-                    Chief Executive Officer
-                </p>
+            <div class="col-md-12 team-lists">
+                <div class="col-md-6 individual-member">
+                    <div class="col-md-4 team-image"><img src="img/team/ceo.jpg" class="img-circle"></div>
+                    <div class="col-md-8 individual-description">
+                        <p>
+                            <strong>Diesel Jack</strong><br><small>CEO</small><br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 individual-member">
+                    <div class="col-md-4 team-image"><img src="img/team/webdeveloper.jpg" class="img-circle"></div>
+                    <div class="col-md-8 individual-description">
+                        <p>
+                            <strong>Diesel Jack</strong><br><small>CEO</small><br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/projmanager.jpg" class="img-responsive">
-                <p>
-                    <strong>Project Manager</strong><br>
-                    Project Manager
-                </p>
+
+
+            <div class="col-md-12 team-lists">
+                <div class="col-md-6 individual-member">
+                    <div class="col-md-4 team-image"><img src="img/team/mobileappdev.jpg" class="img-circle" style="width: 100%;"></div>
+                    <div class="col-md-8 individual-description">
+                        <p>
+                            <strong>Diesel Jack</strong><br><small>CEO</small><br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 individual-member">
+                    <div class="col-md-4 team-image"><img src="img/team/seoexpert.jpg" class="img-circle"></div>
+                    <div class="col-md-8 individual-description">
+                        <p>
+                            <strong>Diesel Jack</strong><br><small>CEO</small><br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/webdeveloper.jpg" class="img-responsive">
-                <p>
-                    <strong>Web Developer</strong><br>
-                    Web Developer
-                </p>
-            </div>
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/mobileappdev.jpg" class="img-responsive">
-                <p>
-                    <strong>Mobile App Developer</strong><br>
-                    Mobile App Developer
-                </p>
-            </div>
-            <div class="col-md-3 our-team-description">
-                <img src="img/team/seoexpert.jpg" class="img-responsive">
-                <p>
-                    <strong>SEO Expert</strong><br>
-                    SEO Expert
-                </p>
-            </div>
+
         </div>
     </div>
 </section>
@@ -366,10 +440,7 @@
     </div>
 </section>
 <!--portfolio-->
-
 &nbsp;
-
-
 <!--testimonials-->
 <section class="testimonials">
     <div class="container-fluid">
@@ -444,10 +515,11 @@
                       </span>
                     </div>
                 </li>
-            </ul><!-- .testimonials-line -->
-        </div><!-- .testimonials-wrapper -->
-    </section><!-- .testimonials -->
+            </ul>
+        </div>
+    </section>
 </section>
+<!--testimonials-->
 
 <!--contact-->
 <section id="contact" class="contact visibility-hidden">
@@ -486,16 +558,10 @@
         </div>
 
         <div class="col-md-4 quick-links">
-            <h3>
-                <span class="ytt-green">Quick</span>
-                <span class="ytt-blue">Links</span>
-            </h3>
-            <span class="quick-links-description"><a href="">Know Who We Are?</a></span>
-            <br>
-            <span class="quick-links-description" id="project">
-                <a href="#">Have A Project?</a>
-                <img src="img/quote.png" class="img-responsive" style="width: 100px; height: 100px;">
-            </span>
+            <h3><span class="ytt-green">Quick</span><span class="ytt-blue">Links</span></h3>
+            <span class="quick-links-description"><a href="">Know Who We Are?</a></span><br>
+            <span class="quick-links-description" id="project"><a href="#">Have A Project?</a></span><br>
+            <span class="quick-links-description"><a href="#">FAQ</a></span>
         </div>
 
     </div>

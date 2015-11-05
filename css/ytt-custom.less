@@ -39,6 +39,7 @@
 .ytt-asp {color:#1A4395;}
 .ytt-android{color:#99CC00;}
 
+
 //color for rotation
 .ytt-1 {color: #82C341;}
 .ytt-2 {color: #EF5323;  }
@@ -447,8 +448,6 @@ body {
     }
   }
 
-
-
   .cbp_tmtimeline {
     margin: 30px 0 0 0;
     padding: 0;
@@ -485,22 +484,22 @@ body {
 
   .cbp_tmtimeline > li .cbp_tmtime span:first-child {
     font-size: 0.9em;
-    color: #bdd0db;
+    //color: #bdd0db;
   }
 
   .cbp_tmtimeline > li .cbp_tmtime span:last-child {
     font-size: 2.9em;
-    color: #3594cb;
+    //color: #3594cb;
   }
 
   .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-    color: #6cbfee;
+    //color: #6cbfee;
   }
 
   /* Right content */
   .cbp_tmtimeline > li .cbp_tmlabel {
     margin: 0 0 15px 25%;
-    background: #3594cb;
+    //background: #3594cb;
     color: #fff;
     padding: 2em;
     font-size: 1.2em;
@@ -511,7 +510,7 @@ body {
   }
 
   .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-    background: #6cbfee;
+    //background: #6cbfee;
   }
 
   .cbp_tmtimeline > li .cbp_tmlabel h2 {
@@ -529,14 +528,14 @@ body {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-right-color: #3594cb;
+    border-right-color: #EF5323;
     border-width: 10px;
     top: 10px;
     margin-left: 10px;
   }
 
   .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-    border-right-color: #6cbfee;
+    border-right-color: #82C341;
   }
 
   /* The icons */
@@ -545,12 +544,13 @@ body {
     height: 40px;
     position: absolute;
     color: #fff;
-    background: #46a4da;
+    //background: #46a4da;
     font-size: 1.7em;
     border-radius: 50%;
-    box-shadow: 0 0 0 8px #afdcf8;
+    box-shadow: 0 0 0 8px #EEE;
     text-align: center;
     margin-left: 60px;
+    //#updownanimation();
   }
 
   /* Example Media Queries */
@@ -651,17 +651,50 @@ body {
 //our team
 .our-team {
   padding-top: 60px;
+
+  //background-image: url("../img/testimonials/test_bck.jpg");
+  //background-attachment: fixed;
+  //background-size: cover;
+
   .our-team-description
   {
     #font18;
-    text-align: center;
+    text-align: left;
+  }
 
+  .team-image
+  {
+    margin-top: 2px;
     img
     {
       width: 100%;
     }
   }
 
+  .team-lists
+  {
+    padding-top: 10px;
+  }
+
+  .individual-member
+  {
+    padding: 15px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+    &:hover
+    {
+      background-color: #EEEEEE;
+      cursor: pointer;
+    }
+  }
+
+  .individual-description
+  {
+    padding-top: 10px;
+  }
 }
 
 

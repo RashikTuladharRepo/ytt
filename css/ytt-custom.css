@@ -447,18 +447,12 @@ body {
 }
 .process .cbp_tmtimeline > li .cbp_tmtime span:first-child {
   font-size: 0.9em;
-  color: #bdd0db;
 }
 .process .cbp_tmtimeline > li .cbp_tmtime span:last-child {
   font-size: 2.9em;
-  color: #3594cb;
-}
-.process .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-  color: #6cbfee;
 }
 .process .cbp_tmtimeline > li .cbp_tmlabel {
   margin: 0 0 15px 25%;
-  background: #3594cb;
   color: #fff;
   padding: 2em;
   font-size: 1.2em;
@@ -466,9 +460,6 @@ body {
   line-height: 1.4;
   position: relative;
   border-radius: 5px;
-}
-.process .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-  background: #6cbfee;
 }
 .process .cbp_tmtimeline > li .cbp_tmlabel h2 {
   margin-top: 0px;
@@ -483,23 +474,22 @@ body {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-right-color: #3594cb;
+  border-right-color: #EF5323;
   border-width: 10px;
   top: 10px;
   margin-left: 10px;
 }
 .process .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-  border-right-color: #6cbfee;
+  border-right-color: #82C341;
 }
 .process .cbp_tmtimeline > li .cbp_tmicon {
   width: 40px;
   height: 40px;
   position: absolute;
   color: #fff;
-  background: #46a4da;
   font-size: 1.7em;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #afdcf8;
+  box-shadow: 0 0 0 8px #EEE;
   text-align: center;
   margin-left: 60px;
 }
@@ -568,10 +558,31 @@ body {
 }
 .our-team .our-team-description {
   font-size: 18px;
-  text-align: center;
+  text-align: left;
 }
-.our-team .our-team-description img {
+.our-team .team-image {
+  margin-top: 2px;
+}
+.our-team .team-image img {
   width: 100%;
+}
+.our-team .team-lists {
+  padding-top: 10px;
+}
+.our-team .individual-member {
+  padding: 15px;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+}
+.our-team .individual-member:hover {
+  background-color: #EEEEEE;
+  cursor: pointer;
+}
+.our-team .individual-description {
+  padding-top: 10px;
 }
 .contact {
   padding-top: 60px;
