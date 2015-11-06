@@ -88,7 +88,7 @@
     </ul>
 </section>
 <!--slider-->
-
+&nbsp;
 <!--services-->
 <section id="services" class="services visibility-hidden">
     <div class="container-fluid">
@@ -353,16 +353,16 @@
         <!-- start of tab panes -->
         <div class="tab-content col-md-10">
             <div class="row" id="mixItUp">
-                <div id="pop" class="col-md-4 col-sm-12 mix webdevelopment portfolios-list">
+                <div id="pop" class="col-md-4 col-sm-6 col-xs-12 mix webdevelopment portfolios-list">
                     <img src="img/process/step4.jpg" class="img-responsive img-thumbnail" alt="www.rashik.com.np"/>
                 </div>
-                <div id="pop" class="col-md-4 mix mobileapp portfolios-list">
+                <div id="pop" class="col-md-4 col-sm-6 col-xs-12 mix mobileapp portfolios-list">
                     <img src="img/process/step1.jpg" class="img-responsive img-thumbnail" alt="step1"/>
                 </div>
-                <div id="pop" class="col-md-4 mix graphics portfolios-list">
+                <div id="pop" class="col-md-4 col-sm-6 col-xs-12 mix graphics portfolios-list">
                     <img src="img/process/step2.jpg" class="img-responsive img-thumbnail" alt="step2"/>
                 </div>
-                <div id="pop" class="col-md-4 mix contents portfolios-list">
+                <div id="pop" class="col-md-4 col-sm-6 col-xs-12 mix contents portfolios-list">
                     <img src="img/process/step3.jpg" class="img-responsive img-thumbnail" alt="step3"/>
                 </div>
             </div>

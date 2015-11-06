@@ -311,9 +311,9 @@ body {
   background: #0169CE !important;
 }
 .slider {
-  padding-top: 90px;
+  padding: 60px 0 0;
 }
-.rslides {
+.slider .rslides {
   position: relative;
   list-style: none;
   overflow: hidden;
@@ -321,7 +321,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.rslides li {
+.slider .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
@@ -329,12 +329,12 @@ body {
   left: 0;
   top: 0;
 }
-.rslides li:first-child {
+.slider .rslides li:first-child {
   position: relative;
   display: block;
   float: left;
 }
-.rslides img {
+.slider .rslides img {
   display: block;
   height: auto;
   float: left;
@@ -343,6 +343,9 @@ body {
 }
 .services {
   padding-top: 60px;
+  background-image: url("../img/team/out-team.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 .services .service-lists {
   height: 350px;
@@ -366,6 +369,7 @@ body {
 .services .service-description {
   margin: 0 auto;
   font-size: 18px;
+  color: #FFFFFF;
   padding: 10px;
   margin-top: 25px;
   -webkit-transition: background 1s;
@@ -560,6 +564,10 @@ body {
 }
 .our-team {
   padding-top: 60px;
+  padding-bottom: 10px;
+  background-image: url("../img/team/out-team.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 .our-team .team-list .team-item {
   padding: 0;
@@ -652,6 +660,7 @@ body {
 .our-team .our-team-description {
   font-size: 18px;
   text-align: left;
+  color: #FFFFFF;
 }
 .our-team .team-image {
   margin-top: 2px;
@@ -673,9 +682,16 @@ body {
 .our-team .individual-member:hover {
   background-color: #EEEEEE;
   cursor: pointer;
+  color: #000;
 }
 .our-team .individual-description {
   padding-top: 10px;
+}
+.testimonials {
+  padding-top: 60px;
+  background-image: url("../img/team/out-team.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 .contact {
   padding-top: 60px;
