@@ -156,6 +156,11 @@
   }
 }
 /*------------------------------------------------------Animation Blocks------------------------------------------------*/
+body {
+  background-image: url("../img/tempbg.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
 .backoffer {
   width: 50px;
   height: 50px;
@@ -556,6 +561,94 @@ body {
 .our-team {
   padding-top: 60px;
 }
+.our-team .team-list .team-item {
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid #e9003c;
+}
+.our-team .team-list .team-item img {
+  margin: 0 auto;
+  display: block;
+}
+.our-team .team-list .team-item .team-desc {
+  position: absolute;
+  width: 100%;
+  background: rgba(233, 0, 60, 0.7);
+  padding: 0.5rem 1rem;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+}
+.our-team .team-list .team-item .team-desc h3 {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.our-team .team-list .team-item .team-desc p {
+  color: #fff;
+  font-size: 0.875rem;
+  margin: 0;
+}
+.our-team .team-list .team-item:hover .team-desc {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, -60px, 0);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+}
+.our-team .team-list .team-item.current .team-desc {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, -60px, 0);
+}
+.our-team .team-item-holder {
+  height: 37.5rem;
+  margin-top: 5rem;
+}
+.our-team .team-content {
+  width: 74%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+.our-team .team-content img {
+  margin-bottom: 1rem;
+  -webkit-transform: translate3d(0, -55px, 0);
+  transform: translate3d(0, -55px, 0);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+}
+.our-team .team-content .team-content-text {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+.our-team .team-content .team-content-text p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-align: left;
+  color: #636363;
+}
+.our-team .team-content.current {
+  opacity: 1;
+}
+.our-team .team-content.current img {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0px, 0);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+}
+.our-team .team-content.current .team-content-text {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
 .our-team .our-team-description {
   font-size: 18px;
   text-align: left;
@@ -591,18 +684,8 @@ body {
 .contact .contact-description p {
   font-size: 18px;
 }
-.contact .quick-links .quick-links-description {
-  font-size: 18px;
-}
-.contact .quick-links .quick-links-description a {
-  text-decoration: none;
-}
-.contact .quick-links .quick-links-description img {
-  animation-name: left-right;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease;
+.contact .find-us {
+  padding: 0;
 }
 .modal-header,
 h4 {
@@ -664,6 +747,9 @@ footer {
 }
 footer p {
   font-size: 18px;
-  text-align: left;
+  text-align: center;
   font-weight: 500;
+}
+footer .footer-links a {
+  text-decoration: none;
 }

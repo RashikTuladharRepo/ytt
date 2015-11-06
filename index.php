@@ -14,87 +14,23 @@
     <link href="css/alpha.css" rel="stylesheet" type="text/css"/>
     <style>
 
-        .team-list .team-item {
-            padding: 0;
-            text-align: left;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            border-bottom: 2px solid #e9003c; }
-        .team-list .team-item img {
-            margin: 0 auto;
-            display: block; }
-        .team-list .team-item .team-desc {
-            position: absolute;
-            width: 100%;
-            background: rgba(233, 0, 60, 0.7);
-            padding: 0.5rem 1rem;
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            -webkit-transition: -webkit-transform 0.8s;
-            transition: transform 0.8s; }
-        .team-list .team-item .team-desc h3 {
-            color: #fff;
-            font-size: 1rem;
-            text-transform: uppercase;
-            margin: 0; }
-        .team-list .team-item .team-desc p {
-            color: #fff;
-            font-size: 0.875rem;
-            margin: 0; }
-        .team-list .team-item:hover .team-desc {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, -60px, 0);
-            -webkit-transition: -webkit-transform 0.8s;
-            transition: transform 0.8s; }
-        .team-list .team-item.current .team-desc {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, -60px, 0); }
 
-        .team-item-holder {
-            height: 37.5rem;
-            margin-top: 5rem; }
-
-        .team-content {
-            width: 74%;
-            margin: 0 auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            opacity: 0; }
-        .team-content img {
-            margin-bottom: 1rem;
-            -webkit-transform: translate3d(0, -55px, 0);
-            transform: translate3d(0, -55px, 0);
-            -webkit-transition: -webkit-transform 0.8s;
-            transition: transform 0.8s; }
-        .team-content .team-content-text {
-            opacity: 0;
-            -webkit-transition: opacity 0.8s;
-            transition: opacity 0.8s; }
-        .team-content .team-content-text p {
-            font-size: 0.875rem;
-            line-height: 1.5;
-            text-align: left;
-            color: #636363; }
-        .team-content.current {
-            opacity: 1; }
-        .team-content.current img {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0px, 0);
-            -webkit-transition: -webkit-transform 0.8s;
-            transition: transform 0.8s; }
-        .team-content.current .team-content-text {
-            opacity: 1;
-            -webkit-transition: opacity 0.8s;
-            transition: opacity 0.8s; }
 
     </style>
 </head>
 
 
 <body id="home" data-spy="scroll" data-target="#myNavbar" data-offset="80">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
 
 <div class="bg-overlay"></div>
 <div id="preloader">
@@ -102,8 +38,6 @@
         <small>Please Wait Untill The Page Loads Completely.....</small>
     </div>
 </div>
-
-
 
 
 <div id="backoffer" class="backoffer"><a href="javascript:void(0);"  data-toggle="tooltip" data-placement="top" data-original-title="Have A Project??"><i class="fa fa-question"></i></a></div>
@@ -154,7 +88,6 @@
     </ul>
 </section>
 <!--slider-->
-
 
 <!--services-->
 <section id="services" class="services visibility-hidden">
@@ -265,7 +198,6 @@
 </section>
 <!--services-->
 
-
 <!--process-->
 <section id="process" class="process visibility-hidden">
     <div class="container-fluid">
@@ -353,7 +285,7 @@
     <div class="container-fluid our-team-description">
         <div class="row">
             <div class="col-md-12 team-lists">
-                <div class="col-md-6 individual-member">
+                <div class="col-md-6 col-sm-6 individual-member">
                     <div class="col-md-4 team-image"><img src="img/team/ceo.jpg" class="img-circle"></div>
                     <div class="col-md-8 individual-description">
                         <p>
@@ -362,7 +294,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 individual-member">
+                <div class="col-md-6 col-sm-6 individual-member">
                     <div class="col-md-4 team-image"><img src="img/team/webdeveloper.jpg" class="img-circle"></div>
                     <div class="col-md-8 individual-description">
                         <p>
@@ -375,7 +307,7 @@
 
 
             <div class="col-md-12 team-lists">
-                <div class="col-md-6 individual-member">
+                <div class="col-md-6 col-sm-6 individual-member">
                     <div class="col-md-4 team-image"><img src="img/team/mobileappdev.jpg" class="img-circle" style="width: 100%;"></div>
                     <div class="col-md-8 individual-description">
                         <p>
@@ -384,7 +316,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 individual-member">
+                <div class="col-md-6 col-sm-6 individual-member">
                     <div class="col-md-4 team-image"><img src="img/team/seoexpert.jpg" class="img-circle"></div>
                     <div class="col-md-8 individual-description">
                         <p>
@@ -399,7 +331,6 @@
     </div>
 </section>
 <!--team-->
-
 
 <!--portfolio-->
 <section id="portfolio" class="portfolio visibility-hidden">
@@ -447,7 +378,7 @@
         <h2 class="ytt-green"><i class="fa fa-user">&nbsp;</i>Our Clients Thought On Us!</h2>
     </div>
 
-    <section id="testimonials">
+    <section id="testimonials" class="testimonial-body">
 
         <div class="testim-ovl"></div>
         <div class="testimonials-wrapper">
@@ -522,7 +453,7 @@
 <!--testimonials-->
 
 <!--contact-->
-<section id="contact" class="contact visibility-hidden">
+<section id="contact" class="contact">
     <div class="container-fluid">
         <h2 class="ytt-blue"><i class="fa fa-phone">&nbsp;</i>How Can You Get To Us?</h2>
     </div>
@@ -557,11 +488,9 @@
             </div>
         </div>
 
-        <div class="col-md-4 quick-links">
-            <h3><span class="ytt-green">Quick</span><span class="ytt-blue">Links</span></h3>
-            <span class="quick-links-description"><a href="">Know Who We Are?</a></span><br>
-            <span class="quick-links-description" id="project"><a href="#">Have A Project?</a></span><br>
-            <span class="quick-links-description"><a href="#">FAQ</a></span>
+        <div class="col-md-4 find-us">
+            <h3><span class="ytt-red">Our </span><span class="ytt-green">Facebook </span><span class="ytt-blue">Page</span></h3>
+            <div class="fb-page" data-href="https://www.facebook.com/YoungThinkersTechnology/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/YoungThinkersTechnology/"><a href="https://www.facebook.com/YoungThinkersTechnology/">Young Thinkers Technology</a></blockquote></div></div>
         </div>
 
     </div>
@@ -569,6 +498,9 @@
 <!--contact-->
 
 <footer>
+    <span class="col-md-12 text-left font16 footer-links">
+        <a href="javascript:void(0);"id="about-us"> About Us </a>  |<a href="javascript:void(0);" id="project">  Have A Project?  </a>|<a href="javascript:void(0);">   FAQ  </a>|<a href="javascript:void(0);">  Why Us?  </a>
+    </span>
     <p>&nbsp;&nbsp;
         <span class="ytt-green">Young</span>
         <span class="ytt-blue">Thinkers</span>
@@ -606,6 +538,13 @@
     $("#project").click(function(){
         $("#have-project").modal();
     });
+
+
+
+    $("#about-us").click(function(){
+        $("#who-are-we").modal();
+    });
+
 
 
 </script>
