@@ -202,6 +202,22 @@ body {
   padding-left: 9px;
   font-size: 50px;
 }
+.have-a-project {
+  border: none;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  padding: 10px;
+  z-index: 99999;
+  -webkit-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.75);
+  animation-name: offers;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
 body {
   font-family: "segeo";
   margin: 0 auto;
@@ -395,11 +411,13 @@ body {
   margin-right: auto;
 }
 .services .service-description .service-icon-holder .service-icons {
+  position: relative;
   cursor: pointer;
   width: 100px;
   height: 100px;
   font-size: 80px;
   text-align: center;
+  z-index: -9999 !important;
 }
 .services .other-service-description {
   padding-top: 30px;
@@ -686,6 +704,73 @@ body {
 }
 .our-team .individual-description {
   padding-top: 10px;
+}
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  width: 100%;
+  background: #eee;
+  height: 50px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #fff;
+  background: #6adcfa;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.skillbar-bar {
+  height: 50px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #444;
+  color: rgba(0, 0, 0, 0.4);
 }
 .testimonials {
   padding-top: 60px;

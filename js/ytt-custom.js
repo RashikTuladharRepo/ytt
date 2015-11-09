@@ -45,19 +45,19 @@ $("a[href^='#']").on('click', function (e) {
 });
 
 $('#backtotop').css("display","none");
-$('#backoffer').css("display","none");
+//$('#backoffer').css("display","none");
 $(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_test = 100;             // set to whatever you want it to be
 
     if(y_scroll_pos > scroll_pos_test) {
         $('#backtotop').fadeIn();
-        $('#backoffer').fadeIn();
+        //$('#backoffer').fadeIn();
     }
     else
     {
         $('#backtotop').fadeOut();
-        $('#backoffer').fadeOut();
+        //$('#backoffer').fadeOut();
     }
 });
 
