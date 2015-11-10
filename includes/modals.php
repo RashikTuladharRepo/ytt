@@ -46,7 +46,8 @@ Please fill the form below to tell us what you want us to carry out for you. We 
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <textarea name="project-description"></textarea>
+                            <label for="project-description">Contact Number:</label>
+                            <textarea name="project-description" id="project-description"></textarea>
                             <button type="submit" class="btn btn-success send-quote" name="send-quote">
                                 <i class="fa fa-send">&nbsp;</i> Proceed With Your Request
     </button>
@@ -120,7 +121,7 @@ Please fill the form below to tell us what you want us to carry out for you. We 
                 </p>
             </div>
             <div class="modal-body" style="height: 700px;">
-                <img src="img/logo.png" class="img-responsive" id="about-us-image" style="position: absolute; opacity: 0.5;">
+                <img src="img/logo.png" class="img-responsive" id="about-us-image" style="position: absolute; opacity: 0.2; margin-left: -10px;">
                 <form role="form" class="project-form">
                     <div class="col-md-12 font18 text-justify">
                         
@@ -148,6 +149,67 @@ Please fill the form below to tell us what you want us to carry out for you. We 
                 <p class="text-center font16 ytt-red">
                     Your Satisfication Is Our Goal.
                 </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- Feedback -->
+<div class="modal fade" id="feedback" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4><span class="glyphicon glyphicon-bell"></span> Have Something To Say?</h4>
+                <p class="font16">
+                    Please fill the form below to tell us what you want. Your suggestion will help us improve and grow much more :)
+                </p>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="project-form">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="feedback-fullname">Full Name</label>
+                                <input type="text" class="form-control" id="feedback-fullname">
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback-mobile">Mobile Number:</label>
+                                <input type="text" class="form-control" id="feedback-mobile">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="feedback-email">Email Address:</label>
+                                <input type="email" class="form-control" id="feedback-email">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address:</label>
+                                <input type="text" class="form-control" id="feedback-address">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="feedback-description">Description:</label>
+                            <textarea name="feedback-description" id="feedback-description"></textarea>
+                            <button type="submit" class="btn btn-success send-quote" name="feedback-button">
+                                <i class="fa fa-send">&nbsp;</i> Send Us Your Views
+                            </button>
+                            <!--<button type="submit" class="btn btn-danger" data-dismiss="modal">-->
+                            <!--<span class="glyphicon glyphicon-remove"></span> Cancel-->
+                            <!--</button>-->
+                        </div>
+                    </div>
+                </form>
+                <div class="clearfix"></div>
+            </div>
+            <div class="modal-footer">
+                <p class="text-center font16 ytt-blue">We will very much happy to have your opinion and suggestion for us :)</p>
             </div>
         </div>
 

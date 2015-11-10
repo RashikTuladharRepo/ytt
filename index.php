@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Young Thinkers Technology Pvt. Ltd</title>
+    <title>Kratu Technology Pvt. Ltd</title>
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -54,17 +54,17 @@
 <?php include "includes/process.php";?>
 <!--process-->
 <!--team-->
-<?php include "includes/team.php"; ?>
+<?php //include "includes/team.php"; ?>
 <!--team-->
 <!--skills-->
 <?php include "includes/skills.php";?>
 <!--skills-->
 <!--portfolio-->
-<?php include "includes/portfolio.php"; ?>
+<?php //include "includes/portfolio.php"; ?>
 &nbsp;
 <!--portfolio-->
 <!--testimonials-->
-<?php include "includes/testimonials.php" ?>
+<?php //include "includes/testimonials.php" ?>
 <!--testimonials-->
 <!--contact-->
 <?php include "includes/contact.php"; ?>
@@ -105,6 +105,10 @@
 
     });
 
+    $("#backoffer").click(function(){
+        $("#have-project").modal();
+    });
+
     $("#project").click(function(){
         $("#have-project").modal();
     });
@@ -112,6 +116,12 @@
     $("#about-us").click(function(){
         $("#who-are-we").modal();
     });
+
+    $("#something-to-say").click(function(){
+        $("#feedback").modal();
+    });
+
+
 
 </script>
 <script src="js/skill.js"></script>
