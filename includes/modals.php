@@ -120,7 +120,7 @@ Please fill the form below to tell us what you want us to carry out for you. We 
                     Kratu Technology Pvt. Ltd
                 </p>
             </div>
-            <div class="modal-body" style="height: 700px;">
+            <div class="modal-body" style="min-height: 700px; height: auto;">
                 <img src="img/logo.png" class="img-responsive" id="about-us-image" style="position: absolute; opacity: 0.2; margin-left: -10px;">
                 <form role="form" class="project-form">
                     <div class="col-md-12 font18 text-justify">
