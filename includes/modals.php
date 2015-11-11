@@ -117,7 +117,7 @@ Please fill the form below to tell us what you want us to carry out for you. We 
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4><span class="fa fa-users"></span> Who Are We?</h4>
                 <p class="font16">
-                    Young Thinkers Technology
+                    Kratu Technology Pvt. Ltd
                 </p>
             </div>
             <div class="modal-body" style="height: 700px;">
@@ -126,14 +126,14 @@ Please fill the form below to tell us what you want us to carry out for you. We 
                     <div class="col-md-12 font18 text-justify">
                         
 <br><br>
-                        Young Thinkers Technology was founded this year (2015 A.D). As name symbolizes this is the company established by a group of young innovative lads who really realizes the ground surface of IT sector in Nepal.
+                        Kratu Technology was founded this year (2015 A.D). It is the company established by a group of young innovative lads who really realizes the ground surface of IT sector in Nepal.
 <br><br>
                         We guarantee excellent web related service that is reliable, effective and priced well. We offer a wide range of services that includes: Domain name registration/ web hosting, web design and development, graphics designs, content writing, social media marketing, mobile application and any more.
                         <br><br>
                         Our aim is to reach to individual, home- office and institutional as well as business need. We see, say and guarantee our services as "Easy, Efficient and as cheap as it can be".
                         <br><br>
 
-                        YTT uses a conceptual model to deliver high quality services with flexible teams and different engagement models to fit every specific business need.<br><br>
+                        KTPL uses a conceptual model to deliver high quality services with flexible teams and different engagement models to fit every specific business need.<br><br>
                         We believe in our greater spirit, the more passionately we face new challenge, more strongly we determined to catch the pace of technology to reach our strategic business needs and objectives.
                         <br><br>
                         We do samething but in different approach as our staff are completely capable of thinking out-of-the box way.

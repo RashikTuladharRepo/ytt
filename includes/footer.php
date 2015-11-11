@@ -1,6 +1,6 @@
 <footer>
     <span class="col-md-12 text-left font16 footer-links">
-        <a href="javascript:void(0);"id="about-us"> About Us </a>  |<a href="javascript:void(0);" id="project">  Have A Project?  </a>
+        <a href="javascript:void(0);"id="about-us"> About Us </a>  |<a href="javascript:void(0);" id="project">  Got Some Work?  </a>
     </span>
     <p>&nbsp;&nbsp;
         <span class="ytt-green">Young</span>

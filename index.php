@@ -35,7 +35,7 @@
 </div>
 
 
-<button id="backoffer" class="btn-success have-a-project"><i class="glyphicon glyphicon-send">&nbsp;</i>Have A Project?</button>
+<button id="backoffer" class="btn-success have-a-project"><i class="glyphicon glyphicon-send">&nbsp;</i>Got Some Work?</button>
 <!--<div id="backoffer" class="backoffer"><a href="javascript:void(0);"  data-toggle="tooltip" data-placement="top" data-original-title="Have A Project??"><i class="fa fa-question"></i></a></div>-->
 <div id="backtotop" class="backtotop"><a href="#home"><i class="fa fa-angle-up hvr-bob"></i></a></div>
 
@@ -121,6 +121,9 @@
         $("#feedback").modal();
     });
 
+	$("#nav-about-us").click(function(){
+		$("#who-are-we").modal();
+	});
 
 
 </script>
